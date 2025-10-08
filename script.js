@@ -27,6 +27,7 @@
     const username = usernameInput.value.trim();
     const password = passwordInput.value;
 
+    // ✅ Fixed alert with template literal
     alert(`Logged in as ${username}`);
 
     if (rememberCheckbox.checked) {
@@ -43,7 +44,8 @@
   existingBtn.addEventListener("click", () => {
     const savedUsername = localStorage.getItem("username");
     if (savedUsername) {
+      // ✅ Fixed alert here too
       alert(`Logged in as ${savedUsername}`);
-    }
-  });
+    }
+  });
 })();
